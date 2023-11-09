@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContosoPizza</name>
+    </assembly>
+    <members>
+        <member name="T:ContosoPizza.Controllers.PizzaController">
+            <summary>
+            Web Api Actions for Pizza Application
+            </summary>
+        </member>
+        <member name="M:ContosoPizza.Controllers.PizzaController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:ContosoPizza.Controllers.PizzaController.GetAll">
+            <summary>
+            Gets All the Pizzas in Memory
+            Returns all the pizza model objects in memory
+            (Status OK)
+            </summary>
+            <returns>A List of Pizza model objects</returns>
+        </member>
+        <member name="M:ContosoPizza.Controllers.PizzaController.Get(System.Int32)">
+            <summary>
+            Get One Specific Pizza
+            Given a unique identifier (int), retrieves one specific
+            pizza model object from the in-memory data store
+            </summary>
+            <param name="id">(int) unique identifier of the pizza</param>
+            <returns>(Pizza) one pizza model object if it exists, not found otherwise</returns>
+        </member>
+        <member name="M:ContosoPizza.Controllers.PizzaController.Create(ContosoPizza.Models.Pizza)">
+            <summary>
+            Creates a pizza
+            Automatically assigns a unique identifier (int)
+            at the Service layer when adding
+            </summary>
+            <param name="pizza">(Pizza) pizza model object</param>
+            <returns>(Pizza) pizza that was created with the assigned unique identifier (int)</returns>
+        </member>
+        <member name="M:ContosoPizza.Controllers.PizzaController.Update(System.Int32,ContosoPizza.Models.Pizza)">
+            <summary>
+            Updates a Specific Pizza
+            Given a unique identifier (int), the Service layer
+            will update the specific pizza if it exists
+            </summary>
+            <param name="id">(int) unique identifier of the pizza</param>
+            <param name="pizza">(Pizza) pizza to delete</param>
+            <returns>Status of Update Operation</returns>
+        </member>
+        <member name="M:ContosoPizza.Controllers.PizzaController.Delete(System.Int32)">
+            <summary>
+            Delete a specific Pizza
+            Given a unique identifier, deletes the 
+            specified pizza in memory if it exists
+            </summary>
+            <param name="id">(int) identifier of the pizza</param>
+            <returns>Status of the Delete Operation</returns>
+        </member>
+        <member name="T:ContosoPizza.Models.Pizza">
+            <summary>
+            Simple Pizza
+            </summary>
+        </member>
+        <member name="P:ContosoPizza.Models.Pizza.Id">
+            <summary>
+            Unique Identifier (int) 
+            for Pizza
+            </summary>
+        </member>
+        <member name="P:ContosoPizza.Models.Pizza.Name">
+            <summary>
+            Name of the Pizza (string)
+            </summary>
+        </member>
+        <member name="P:ContosoPizza.Models.Pizza.IsGlutenFree">
+            <summary>
+            Is this Pizza Gluten Free
+            (bool true --> yes)
+            </summary>
+        </member>
+        <member name="T:ContosoPizza.Services.PizzaService">
+            <summary>
+            Service Layer for Pizza CRUD Actions
+            </summary>
+        </member>
+        <member name="P:ContosoPizza.Services.PizzaService.Pizzas">
+            <summary>
+            In-memory static list of Pizzas
+            (mock of database later)
+            </summary>
+        </member>
+        <member name="F:ContosoPizza.Services.PizzaService.nextId">
+            <summary>
+            Unique Identifier Pointer (int)
+            (for assignment of new pizza identifiers)
+            (mock of database layer)
+            </summary>
+        </member>
+        <member name="M:ContosoPizza.Services.PizzaService.#cctor">
+            <summary>
+            Constructor
+            Creates new static list of pizzas
+            </summary>
+        </member>
+        <member name="M:ContosoPizza.Services.PizzaService.GetAll">
+            <summary>
+            Retrieves all pizzas from in-memory
+            </summary>
+            <returns>(List) of Pizza model objects</returns>
+        </member>
+        <member name="M:ContosoPizza.Services.PizzaService.Get(System.Int32)">
+            <summary>
+            Retrieves one pizza from in-memory
+            that matches the identifier
+            </summary>
+            <param name="id">unique identifier for the pizza (int)</param>
+            <returns>A single pizza (pizza that matches the identifier)</returns>
+        </member>
+        <member name="M:ContosoPizza.Services.PizzaService.Add(ContosoPizza.Models.Pizza)">
+            <summary>
+            Adds (Creates) a new Pizza model object
+            to the static list of pizzas
+            </summary>
+            <param name="pizza">(Pizza) pizza model object to add</param>
+        </member>
+        <member name="M:ContosoPizza.Services.PizzaService.Delete(System.Int32)">
+            <summary>
+            Deletes a specific pizza with a unique identifier
+            </summary>
+            <param name="id">(int) unique identifier of the pizza</param>
+        </member>
+        <member name="M:ContosoPizza.Services.PizzaService.Update(ContosoPizza.Models.Pizza)">
+            <summary>
+            Replaces (entire) Pizza model object given
+            a whole Pizza model object with the same 
+            unique identifier 
+            </summary>
+            <param name="pizza">(Pizza) pizza to replace in the list</param>
+        </member>
+    </members>
+</doc>
