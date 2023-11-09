@@ -13,7 +13,7 @@ Topics/YouTube Video
 ## Swagger Documentation
 ## Client Tester
 ## Unit Testing
-## Tutorial and References
+## References
 Although tutorials, videos, and documentation were referenced, this project is creatively my own code and style to demo my technical expertise and contribute to the collective tech knowledge on GitHub. I have listed some of the sources where I drew some code examples and knowledge. 
 
 [Beginner's Series to: Web APIs](https://learn.microsoft.com/en-us/shows/beginners-series-to-web-apis/)
