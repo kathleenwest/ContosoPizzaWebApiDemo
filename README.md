@@ -12,6 +12,9 @@ Topics/YouTube Video
 ## Web Api Patch
 ## Error/Handling Display
 ## Swagger Documentation
+
+[![Watch the tutorial video](/images/SwaggerDocumentationTutorialTitle.jpg)](https://www.youtube.com/watch?v=23VY2JxWEAA "Video Tutorial - Swagger Documentation Tutorial")
+
 ## Client Tester
 ## Unit Testing
 ## References
