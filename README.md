@@ -17,10 +17,17 @@ This tutorial and demo project will show you how to add, set up, configure, and 
 
 Swashbuckle and Swagger are two popular tools used for generating developer documentation for web APIs. Swashbuckle is a package that can be added to an ASP.NET Core web API project to integrate the Swagger UI. It has three main components: Swashbuckle.AspNetCore.Swagger, which is a Swagger object model and middleware to expose SwaggerDocument objects as JSON endpoints; Swashbuckle.AspNetCore.SwaggerGen, which is a Swagger generator that builds SwaggerDocument objects directly from your routes, controllers, and models; and Swashbuckle.AspNetCore.SwaggerUI, which is an embedded version of the Swagger UI tool. It interprets Swagger JSON to build a rich, customizable experience for describing the web API functionality. Swagger (OpenAPI) is a language-agnostic specification for describing REST APIs. It allows both computers and humans to understand the capabilities of a REST API without direct access to the source code. Its main goals are to minimize the amount of work needed to connect decoupled services. ¹³⁴
 
-[![Watch the tutorial video](/images/SwaggerDocumentationTutorialTitle.jpg)](https://www.youtube.com/watch?v=23VY2JxWEAA "Video Tutorial - Swagger Documentation Tutorial")
+[![Watch the tutorial and demo video](/images/SwaggerDocumentationTutorialTitle.jpg)](https://www.youtube.com/watch?v=23VY2JxWEAA "Video Tutorial - Swagger Documentation Tutorial")
 
 ## Client Tester
 ## Unit Testing
+
+This tutorial and demo project will show how to set up, configure, and code simple unit tests for a WebApi project.
+
+In this video, we will discuss how to write simple unit tests for a web API with CRUD controller operations. We will be using xUnit and FakeItEasy packages to write the tests. We will cover the basics of unit testing, including how to set up the test project, how to write tests for each CRUD operation, and how to use xUnit and FakeItEasy to create mocks and stubs. We will also discuss best practices for writing unit tests, such as keeping tests independent and ensuring that they are easy to read and maintain.
+
+[![Watch the tutorial and demo video](/images/UnitTestsTitle.jpg)](https://www.youtube.com/watch?v=EIn-eRWm8AM "Simple Unit Tests Tutorial and Demo")
+
 ## References
 Although tutorials, videos, and documentation were referenced, this project is creatively my own code and style to demo my technical expertise and contribute to the collective tech knowledge on GitHub. I have listed some of the sources where I drew some code examples and knowledge. 
 
