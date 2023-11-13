@@ -17,7 +17,7 @@ This tutorial and demo project will show you how to add, set up, configure, and 
 
 Swashbuckle and Swagger are two popular tools used for generating developer documentation for web APIs. Swashbuckle is a package that can be added to an ASP.NET Core web API project to integrate the Swagger UI. It has three main components: Swashbuckle.AspNetCore.Swagger, which is a Swagger object model and middleware to expose SwaggerDocument objects as JSON endpoints; Swashbuckle.AspNetCore.SwaggerGen, which is a Swagger generator that builds SwaggerDocument objects directly from your routes, controllers, and models; and Swashbuckle.AspNetCore.SwaggerUI, which is an embedded version of the Swagger UI tool. It interprets Swagger JSON to build a rich, customizable experience for describing the web API functionality. Swagger (OpenAPI) is a language-agnostic specification for describing REST APIs. It allows both computers and humans to understand the capabilities of a REST API without direct access to the source code. Its main goals are to minimize the amount of work needed to connect decoupled services. ¹³⁴
 
-[![Watch the tutorial and demo video](/images/SwaggerDocumentationTutorialTitle.jpg)](https://www.youtube.com/watch?v=23VY2JxWEAA "Video Tutorial - Swagger Documentation Tutorial")
+[![Watch the tutorial and demo video](/images/SwaggerDocumentationTutorialTitle.jpg)](https://www.youtube.com/watch?v=23VY2JxWEAA "Swagger Documentation Tutorial and Demo")
 
 ## Client Tester
 ## Unit Testing
