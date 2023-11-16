@@ -1,21 +1,22 @@
-﻿using PizzaApiClient;
-
-namespace WebApiClient
+﻿namespace WebApiClient
 {
     internal class Program
     {
-
-        static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
-            HttpClient httpClient = new HttpClient();
-            PizzaApiClient.PizzaApiClient client = new PizzaApiClient.PizzaApiClient("https://localhost:7048", httpClient);
+            string baseUrl = "https://localhost:7048";
 
-            // Get Pizzas
-            IEnumerable<Pizza> pizzas = await client.GetAllAsync();
+            HttpClient client = new HttpClient();
+
+            ContosoPizzaClient apiClient = new ContosoPizzaClient(baseUrl, client);
+
+            List<Pizza> pizzas = new List<Pizza>();
+
+            pizzas = apiClient.GetAllAsync().Result.ToList();
 
             foreach (Pizza pizza in pizzas)
             {
-                Console.WriteLine($"Pizza Id: {pizza.Id} Pizza Name: {pizza.Name}");
+                Console.WriteLine(pizza.Name);
             }
 
             Console.ReadLine();
