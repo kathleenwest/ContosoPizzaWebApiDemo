@@ -20,6 +20,13 @@ Swashbuckle and Swagger are two popular tools used for generating developer docu
 [![Watch the tutorial and demo video](/images/SwaggerDocumentationTutorialTitle.jpg)](https://www.youtube.com/watch?v=23VY2JxWEAA "Swagger Documentation Tutorial and Demo")
 
 ## Client Tester
+
+This tutorial and demo project will show how to set up, configure, and code a simple HttpClient for the Contoso Pizza Web Api project.
+
+In this YouTube video, we will learn how to create a simple console application project that connects to a Web Api and tests it. The video includes a short demo of the project running and outputting results from the api. We will obtain the OpenApi file by first running our WebApi locally to show the Swagger UI. The JSON file for our Web Api can be downloaded and saved to our project directory. There is another video in the playlist series that shows how to set up and configure Swagger Documentation. The next step is to add a new console application project to our solution. This will be the HttpClient application to connect to our Web Api. Next, we will add an OpenApi Service Reference from the Swagger UI JSON file we previously saved. Visual Studio will auto-generate the client code class needed to interact with the Contoso Pizza Web Api. We will take a look at the auto-generated code class. The constructor needs both a HttpClient object instance and the base url of the running web api. If you run your web api locally, you can find that from the Debug launch profile. Finally, we can code our project to create a HttpClient and proxy service reference to the Contoso UI Pizza Web Api and try to retrieve some pizzas. Make sure the web api application is already running locally before running the HttpClient console application.
+
+[![Watch the tutorial and demo video](/images/HttpClientTitle.jpg)](https://www.youtube.com/watch?v=bpcxD_PZ5cU "HttpClient for Web Api Tutorial and Demo")
+
 ## Unit Testing
 
 This tutorial and demo project will show how to set up, configure, and code simple unit tests for a WebApi project.
