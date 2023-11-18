@@ -66,6 +66,19 @@ public class PizzaController : ControllerBase
     }
 
     /// <summary>
+    /// Demo of Custom Error Handling for Get Operation
+    /// </summary>
+    /// <param name="id">(int) unique identifier of the pizza</param>
+    /// <returns>(Pizza) one pizza model object if it exists, not found otherwise</returns>
+    [HttpGet("/errorDemo/{id}")]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    public ActionResult<Pizza> GetErrorDemo(int id)
+    {
+        throw new ArgumentOutOfRangeException("This is a demo of custom error handling development vs production.");
+    }
+
+
+    /// <summary>
     /// Creates a pizza and automatically assigns a unique identifier (int)
     /// </summary>
     /// <param name="pizza">(Pizza) pizza model object</param>
@@ -188,24 +201,6 @@ public class PizzaController : ControllerBase
         PizzaService.Delete(id);
 
         // Return successful delete operation
-        return NoContent();
-    }
-
-    /// <summary>
-    /// Demo - Cause Unhandled 500 Internal Error
-    /// </summary>
-    /// <param name="id">(int) identifier of the pizza</param>
-    /// <returns>Status of the Delete Operation</returns>
-    [HttpDelete()]
-    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public IActionResult DeleteErrorDemo(int id = 0)
-    {
-        // Validate the user input (invalid)
-        if (id <= 0)
-        {
-            throw new ArgumentOutOfRangeException("id");
-        }
-
         return NoContent();
     }
 

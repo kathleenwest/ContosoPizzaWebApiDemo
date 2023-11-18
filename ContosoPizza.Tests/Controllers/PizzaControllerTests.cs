@@ -90,6 +90,28 @@ namespace ContosoPizza.Tests.Controllers
         }
 
         [Fact]
+        public void GetErrorDemo_ThrowsException_ArgumentOutOfRangeException()
+        {
+            // Arrange
+
+            List<Pizza> pizzas = A.CollectionOfDummy<Pizza>(10).ToList();
+            Pizza? testPizza = pizzas.FirstOrDefault();
+            testPizza!.Id = 10;
+            testPizza.Name = "pineapple";
+            PizzaController? pizzaController = new PizzaController(pizzas);
+
+            Pizza pizzaGet = new Pizza()
+            {
+                Id = 0, // Invalid Id
+                Name = testPizza.Name + "sausage",
+                IsGlutenFree = false
+            };
+
+            // Act and Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => pizzaController.GetErrorDemo(pizzaGet.Id));
+        }
+
+        [Fact]
         public void Create_Returns_ExpectedPizza_Verify_IndexesCorrectly()
         {
             // Arrange
@@ -469,28 +491,6 @@ namespace ContosoPizza.Tests.Controllers
             IStatusCodeActionResult? result = actionResult as IStatusCodeActionResult;
             Assert.Equal(400, result?.StatusCode);
 
-        }
-
-        [Fact]
-        public void DeleteErrorDemo_Invalid_Id_ThrowsException_ArgumentOutOfRangeException()
-        {
-            // Arrange
-            
-            List<Pizza> pizzas = A.CollectionOfDummy<Pizza>(10).ToList();
-            Pizza? testPizza = pizzas.FirstOrDefault();
-            testPizza!.Id = 10;
-            testPizza.Name = "pineapple";
-            PizzaController? pizzaController = new PizzaController(pizzas);
-
-            Pizza pizzaDelete = new Pizza()
-            {
-                Id = 0, // Invalid Id
-                Name = testPizza.Name + "sausage",
-                IsGlutenFree = false
-            };
-
-            // Act and Assert
-            Assert.Throws<ArgumentOutOfRangeException>(() => pizzaController.DeleteErrorDemo(pizzaDelete.Id));
         }
 
     }

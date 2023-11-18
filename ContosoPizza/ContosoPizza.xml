@@ -27,6 +27,13 @@
             <param name="id">(int) unique identifier of the pizza</param>
             <returns>(Pizza) one pizza model object if it exists, not found otherwise</returns>
         </member>
+        <member name="M:ContosoPizza.Controllers.PizzaController.GetErrorDemo(System.Int32)">
+            <summary>
+            Demo of Custom Error Handling for Get Operation
+            </summary>
+            <param name="id">(int) unique identifier of the pizza</param>
+            <returns>(Pizza) one pizza model object if it exists, not found otherwise</returns>
+        </member>
         <member name="M:ContosoPizza.Controllers.PizzaController.Create(ContosoPizza.Models.Pizza)">
             <summary>
             Creates a pizza and automatically assigns a unique identifier (int)
@@ -53,13 +60,6 @@
         <member name="M:ContosoPizza.Controllers.PizzaController.Delete(System.Int32)">
             <summary>
             Delete a specific pizza given a unique identifier, if it exists
-            </summary>
-            <param name="id">(int) identifier of the pizza</param>
-            <returns>Status of the Delete Operation</returns>
-        </member>
-        <member name="M:ContosoPizza.Controllers.PizzaController.DeleteErrorDemo(System.Int32)">
-            <summary>
-            Demo - Cause Unhandled 500 Internal Error
             </summary>
             <param name="id">(int) identifier of the pizza</param>
             <returns>Status of the Delete Operation</returns>
