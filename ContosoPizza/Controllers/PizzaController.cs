@@ -77,7 +77,6 @@ public class PizzaController : ControllerBase
         throw new ArgumentOutOfRangeException("This is a demo of custom error handling development vs production.");
     }
 
-
     /// <summary>
     /// Creates a pizza and automatically assigns a unique identifier (int)
     /// </summary>
