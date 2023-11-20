@@ -11,6 +11,17 @@ Topics/YouTube Video
 ## Web Api CRUD
 ## Web Api Patch
 ## Error/Handling Display
+
+This tutorial and demo project will show how to set up, configure, and code a simple custom error handler for the Contoso Pizza Web Api project.
+
+Developers should plan for unhandled errors in code. The Contoso Pizza Web API project demonstrates how to do this. In the demo, an endpoint is created that always throws an unhandled exception. The project has a custom error controller that handles and logs the exceptions before returning a standard Problem model object to the user. The error controller is specified in the Program configuration to route to a custom error controller when not running in a development environment. The development environment is specified under the Debug launch profile settings, with the default value being Production unless otherwise specified. 
+
+To see the differences in the error display between development and production, first run the API in development mode. Test the endpoint that always triggers an unhandled exception. In the Swagger UI, you can see the response and exception details. The browser window has a separate and elegant developer view of the error results. 
+
+To run the API in production mode, remove the environment variable or manually set the value to Production. Since Swagger UI does not run in production mode, you will need to test the API endpoint manually with a URL. The final result for the user is a general error with an identifier. A user would create a trouble ticket with this information. The company could then complete detailed troubleshooting matching the error identifier to more detailed internal logging.
+
+[![Watch the tutorial and demo video](/images/CustomErrorHandlingTitle.jpg)](https://www.youtube.com/watch?v=1bSpwN5EHyI "Custom Error Handling Tutorial and Demo")
+
 ## Swagger Documentation
 
 This tutorial and demo project will show you how to add, set up, configure, and verify Swagger documentation to your developer WebApi project. The final results are in this code repo. 
