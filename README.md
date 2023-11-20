@@ -10,7 +10,7 @@ Topics/YouTube Video
 ## Architecture
 ## Web Api CRUD
 ## Web Api Patch
-## Error/Handling Display
+## Custom Error Handling and Display
 
 This tutorial and demo project will show how to set up, configure, and code a simple custom error handler for the Contoso Pizza Web Api project.
 
