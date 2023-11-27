@@ -9,7 +9,22 @@ Topics/YouTube Video
 ## Project Overview
 ## Architecture
 ## Web Api CRUD
-## Web Api Patch
+## Web Api JsonPatch
+
+Here are some screen captures showing the web api JsonPatch demo. 
+
+Coming Soon
+
+### Tutorial
+
+This is a great tutorial reference video if you would like to learn more about setup, installing, and using JsonPatch for your Web Api project.
+
+[Updating data with JsonPatch | Beginner's Series to Web APIs](https://learn.microsoft.com/en-us/shows/beginners-series-to-web-apis/updating-data-with-jsonpatch-13-of-18--beginners-series-to-web-apis)
+
+### Documentation
+
+[JsonPatch in ASP.NET Core web API](https://learn.microsoft.com/en-us/aspnet/core/web-api/jsonpatch?view=aspnetcore-7.0&WT.mc_id=beginwebapis-c9-cephilli)
+
 ## Custom Error Handling and Display
 
 This tutorial and demo project will show how to set up, configure, and code a simple custom error handler for the Contoso Pizza Web Api project.
