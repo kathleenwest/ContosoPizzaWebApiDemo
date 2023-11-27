@@ -13,7 +13,12 @@ Topics/YouTube Video
 
 Here are some screen captures showing the web api JsonPatch demo. 
 
-Coming Soon
+1. Get Existing Pizza
+![Get Existing Pizza](/images/JsonPatch/Step1GetExistingPizza.jpg)
+2. PATCH Replace Pizza Name
+![PATCH Replace Pizza Name](/images/JsonPatch/Step2PatchReplaceName.jpg)
+3. Get Existing Pizza - Verify PATCH Replace Operation
+![Get Existing Pizza - Verify PATCH Replace Operationa](/images/JsonPatch/Step3GetExistingPizzaVerifyPatchOperation.jpg)
 
 ### Tutorial
 
