@@ -9,6 +9,22 @@ Topics/YouTube Video
 ## Project Overview
 ## Architecture
 ## Web Api CRUD
+This is a simple web api that follows the standard CRUD (create, read, update, and delete) pattern. Demo images of the api operations are shown below by category.
+
+### Create (C) - Post
+![Create Pizza](/images/CRUDDemo/Post.jpg)
+### Read (R)
+#### Get 
+![Get Pizza](/images/CRUDDemo/GetAll.jpg)
+#### Get By Id
+![Get Pizza By Id](/images/CRUDDemo/GetById.jpg)
+### Update (U)
+#### Put
+![Put Pizza](/images/CRUDDemo/Put.jpg)
+#### Patch
+![Patch Pizza](/images/CRUDDemo/Patch.jpg)
+### Delete (D)
+![Create Pizza](/images/CRUDDemo/Delete.jpg)
 ## Web Api JsonPatch
 
 Here are some screen captures showing the web api JsonPatch demo. 
