@@ -33,6 +33,14 @@ TBA - In progress
 
 ##  1. <a name='ProjectOverview'></a>Project Overview
 ##  2. <a name='Architecture'></a>Architecture
+The visual studio solution has three projects: ContosoPizza (Web Api), ContosoPizza.Tests (Unit Tests), and WebApiClient (a simple HttpClient console app)
+
+![Solution Summary](/images/Architecture/SolutionSummary.jpg)
+
+The controller, model, and service classes with their member summary of the ContosoPizza Web Api project are shown below. 
+
+![Solution Summary](/images/Architecture/SolutionExplorer.jpg)
+
 ##  3. <a name='WebApiCRUD'></a>Web Api CRUD
 This is a simple web api that follows the standard CRUD (create, read, update, and delete) pattern. Demo images of the api operations are shown below by category.
 
