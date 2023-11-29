@@ -1,3 +1,31 @@
+<!-- vscode-markdown-toc -->
+* 1. [Project Overview](#ProjectOverview)
+* 2. [Architecture](#Architecture)
+* 3. [Web Api CRUD](#WebApiCRUD)
+	* 3.1. [Create (C) - Post](#CreateC-Post)
+	* 3.2. [Read (R)](#ReadR)
+		* 3.2.1. [Get](#Get)
+		* 3.2.2. [Get By Id](#GetById)
+	* 3.3. [Update (U)](#UpdateU)
+		* 3.3.1. [Put](#Put)
+		* 3.3.2. [Patch](#Patch)
+	* 3.4. [Delete (D)](#DeleteD)
+* 4. [Web Api JsonPatch](#WebApiJsonPatch)
+	* 4.1. [Tutorial](#Tutorial)
+	* 4.2. [Documentation](#Documentation)
+* 5. [Custom Error Handling and Display](#CustomErrorHandlingandDisplay)
+* 6. [Swagger Documentation](#SwaggerDocumentation)
+* 7. [Client Tester](#ClientTester)
+* 8. [Unit Testing](#UnitTesting)
+* 9. [References](#References)
+* 10. [Bing Chat References for Summary](#BingChatReferencesforSummary)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
 # ContosoPizza
 A simple web api demo with swagger documentation, unit tests, and patch.
 
@@ -6,26 +34,26 @@ TBA - In progress
 I will present this demo project.
 
 Topics/YouTube Video
-## Project Overview
-## Architecture
-## Web Api CRUD
+##  1. <a name='ProjectOverview'></a>Project Overview
+##  2. <a name='Architecture'></a>Architecture
+##  3. <a name='WebApiCRUD'></a>Web Api CRUD
 This is a simple web api that follows the standard CRUD (create, read, update, and delete) pattern. Demo images of the api operations are shown below by category.
 
-### Create (C) - Post
+###  3.1. <a name='CreateC-Post'></a>Create (C) - Post
 ![Create Pizza](/images/CRUDDemo/Post.jpg)
-### Read (R)
-#### Get 
+###  3.2. <a name='ReadR'></a>Read (R)
+####  3.2.1. <a name='Get'></a>Get 
 ![Get Pizza](/images/CRUDDemo/GetAll.jpg)
-#### Get By Id
+####  3.2.2. <a name='GetById'></a>Get By Id
 ![Get Pizza By Id](/images/CRUDDemo/GetById.jpg)
-### Update (U)
-#### Put
+###  3.3. <a name='UpdateU'></a>Update (U)
+####  3.3.1. <a name='Put'></a>Put
 ![Put Pizza](/images/CRUDDemo/Put.jpg)
-#### Patch
+####  3.3.2. <a name='Patch'></a>Patch
 ![Patch Pizza](/images/CRUDDemo/Patch.jpg)
-### Delete (D)
+###  3.4. <a name='DeleteD'></a>Delete (D)
 ![Create Pizza](/images/CRUDDemo/Delete.jpg)
-## Web Api JsonPatch
+##  4. <a name='WebApiJsonPatch'></a>Web Api JsonPatch
 
 Here are some screen captures showing the web api JsonPatch demo. 
 
@@ -48,17 +76,17 @@ Here is the code reference.
 4. Get Existing Pizza - Verify PATCH Replace Operation
 ![Get Existing Pizza - Verify PATCH Replace Operationa](/images/JsonPatch/Step3GetExistingPizzaVerifyPatchOperation.jpg)
 
-### Tutorial
+###  4.1. <a name='Tutorial'></a>Tutorial
 
 This is a great tutorial reference video if you would like to learn more about setup, installing, and using JsonPatch for your Web Api project.
 
 [Updating data with JsonPatch | Beginner's Series to Web APIs](https://learn.microsoft.com/en-us/shows/beginners-series-to-web-apis/updating-data-with-jsonpatch-13-of-18--beginners-series-to-web-apis)
 
-### Documentation
+###  4.2. <a name='Documentation'></a>Documentation
 
 [JsonPatch in ASP.NET Core web API](https://learn.microsoft.com/en-us/aspnet/core/web-api/jsonpatch?view=aspnetcore-7.0&WT.mc_id=beginwebapis-c9-cephilli)
 
-## Custom Error Handling and Display
+##  5. <a name='CustomErrorHandlingandDisplay'></a>Custom Error Handling and Display
 
 This tutorial and demo project will show how to set up, configure, and code a simple custom error handler for the Contoso Pizza Web Api project.
 
@@ -70,7 +98,7 @@ To run the API in production mode, remove the environment variable or manually s
 
 [![Watch the tutorial and demo video](/images/CustomErrorHandlingTitle.jpg)](https://www.youtube.com/watch?v=1bSpwN5EHyI "Custom Error Handling Tutorial and Demo")
 
-## Swagger Documentation
+##  6. <a name='SwaggerDocumentation'></a>Swagger Documentation
 
 This tutorial and demo project will show you how to add, set up, configure, and verify Swagger documentation to your developer WebApi project. The final results are in this code repo. 
 
@@ -78,7 +106,7 @@ Swashbuckle and Swagger are two popular tools used for generating developer docu
 
 [![Watch the tutorial and demo video](/images/SwaggerDocumentationTutorialTitle.jpg)](https://www.youtube.com/watch?v=23VY2JxWEAA "Swagger Documentation Tutorial and Demo")
 
-## Client Tester
+##  7. <a name='ClientTester'></a>Client Tester
 
 This tutorial and demo project will show how to set up, configure, and code a simple HttpClient for the Contoso Pizza Web Api project.
 
@@ -86,7 +114,7 @@ In this YouTube video, we will learn how to create a simple console application 
 
 [![Watch the tutorial and demo video](/images/HttpClientTitle.jpg)](https://www.youtube.com/watch?v=bpcxD_PZ5cU "HttpClient for Web Api Tutorial and Demo")
 
-## Unit Testing
+##  8. <a name='UnitTesting'></a>Unit Testing
 
 This tutorial and demo project will show how to set up, configure, and code simple unit tests for a WebApi project.
 
@@ -94,14 +122,14 @@ In this video, we will discuss how to write simple unit tests for a web API with
 
 [![Watch the tutorial and demo video](/images/UnitTestsTitle.jpg)](https://www.youtube.com/watch?v=EIn-eRWm8AM "Simple Unit Tests Tutorial and Demo")
 
-## References
+##  9. <a name='References'></a>References
 Although tutorials, videos, and documentation were referenced, this project is creatively my own code and style to demo my technical expertise and contribute to the collective tech knowledge on GitHub. I have listed some of the sources where I drew some code examples and knowledge. 
 
 [Beginner's Series to: Web APIs](https://learn.microsoft.com/en-us/shows/beginners-series-to-web-apis/)
 
 [Microsoft Learn - Create a web API with ASP.NET Core controllers](https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/)
 
-## Bing Chat References for Summary
+##  10. <a name='BingChatReferencesforSummary'></a>Bing Chat References for Summary
 
 Source: Conversation with Bing, 11/10/2023
 (1) Get started with Swashbuckle and ASP.NET Core. https://learn.microsoft.com/en-us/asp....
