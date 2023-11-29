@@ -1,8 +1,6 @@
 # ContosoPizza
 A simple web api demo with swagger documentation, unit tests, and patch.
 
-TBA - In progress
-
 <!-- vscode-markdown-toc -->
 * 1. [Project Overview](#ProjectOverview)
 * 2. [Architecture](#Architecture)
@@ -32,6 +30,9 @@ TBA - In progress
 <!-- /vscode-markdown-toc -->
 
 ##  1. <a name='ProjectOverview'></a>Project Overview
+
+The objective of this GitHub project is to demo a simple CRUD web api application with additional tutorials (including YouTube videos) and references including Swagger, unit testing, JsonPatch, custom error handling and display, client testers, etc. 
+
 ##  2. <a name='Architecture'></a>Architecture
 The visual studio solution has three projects: ContosoPizza (Web Api), ContosoPizza.Tests (Unit Tests), and WebApiClient (a simple HttpClient console app)
 
