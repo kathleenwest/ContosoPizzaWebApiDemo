@@ -1,3 +1,8 @@
+# ContosoPizza
+A simple web api demo with swagger documentation, unit tests, and patch.
+
+TBA - In progress
+
 <!-- vscode-markdown-toc -->
 * 1. [Project Overview](#ProjectOverview)
 * 2. [Architecture](#Architecture)
@@ -26,14 +31,6 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-# ContosoPizza
-A simple web api demo with swagger documentation, unit tests, and patch.
-
-TBA - In progress
-
-I will present this demo project.
-
-Topics/YouTube Video
 ##  1. <a name='ProjectOverview'></a>Project Overview
 ##  2. <a name='Architecture'></a>Architecture
 ##  3. <a name='WebApiCRUD'></a>Web Api CRUD
